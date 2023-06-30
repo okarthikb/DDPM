@@ -1,6 +1,6 @@
 ### Diffusion
 
-<a target="_blank" href="https://colab.research.google.com/github/https://colab.research.google.com/drive/17tWk8ApEWvOY2fy7W9xyATm1QhpfOFgQ?usp=sharing">
+<a target="_blank" href="https://colab.research.google.com/github/okarthikb/diffusion/blob/main/diffusion.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
