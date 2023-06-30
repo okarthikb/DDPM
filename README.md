@@ -67,6 +67,6 @@ class Sampler:
     return xs
 ```
 
-Here, `forward_sample` does one iteration in the training algorithm above and `loop` is the whole sampling algorithm.
+Here, `forward_sample` does one iteration of the training algorithm above and `loop` is the whole sampling algorithm.
 
 <img width="922" alt="diffusion" src="https://github.com/okarthikb/Diffusion/assets/86470305/d98c9d24-b63e-4442-9826-9d9114f0e932">
