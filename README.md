@@ -8,7 +8,7 @@
 
 This is a concise implementation of a diffusion model trained on MNIST using a ConvNeXt and attention-based U-Net (inspired by the 2020 DDPM paper) with DDIM sampling. I found [Hugging Face's explainer](https://huggingface.co/blog/annotated-diffusion) on diffusion models (based on [lucidrains's implementation](https://github.com/lucidrains/denoising-diffusion-pytorch)) a bit unfriendly for beginners, so here's a (hopefully) simpler implementation. I've also linked all the helpful resources I went through in the notebook :)
 
-This is the U-Net architecture:
+This is my U-Net model:
 
 ![U-Net](U-Net.png)
 
