@@ -67,6 +67,6 @@ class Sampler:
     return xs
 ```
 
-`forward_sample` takes in a batch of images `x` and timesteps `t`, samples noise `eps` in the shape of an image for each image from the standard normal, and uses `eps` for each image to directly get (this is the reparametrization trick, which we use to make sampling differentiable) its corrupted version at the associated timestep in the forward diffusion process. Our model now needs to predict `eps` given `x_t` and `t`. Like the forward process, the reverse process variance schedule is fixed, so at each timestep the model predicts the mean of the sample at the previous timestep using `eps`; we know the variance already (fixed), and we iteratively sample (again, using the reparametrization trick) denoised input using the predicted distribution until timestep 0.
+Here, `forward_sample` does one iteration in the training algorithm above and `loop` is the whole sampling algorithm.
 
-We can also speed up sampling by predicting many timesteps at once instead of one by one.
+<img width="922" alt="diffusion" src="https://github.com/okarthikb/Diffusion/assets/86470305/d98c9d24-b63e-4442-9826-9d9114f0e932">
