@@ -4,13 +4,18 @@
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-![diffusion](https://github.com/okarthikb/diffusion/assets/86470305/776bebfb-8574-45a3-8ee7-88a61e681203)
+<div align='center'>
+  <img src='https://github.com/okarthikb/diffusion/assets/86470305/776bebfb-8574-45a3-8ee7-88a61e681203'/>
+</div>
 
 This is an implementation of a diffusion model trained on MNIST using a ConvNeXt and attention-based U-Net (inspired by the 2020 DDPM paper) with DDIM sampling. I wanted something more concise than [Hugging Face's explainer](https://huggingface.co/blog/annotated-diffusion) on diffusion models (based on [lucidrains's implementation](https://github.com/lucidrains/denoising-diffusion-pytorch)), so here's a (hopefully) more concise implementation. I've also linked in the notebook all the sources I went through :)
 
 The U-Net model:
 
-![U-Net](U-Net.png)
+<div align='center'>
+  <img src='U-Net.png'/>
+</div>
+
 
 The forward and reverse diffusion processes are defined in a single `Sampler` class:
 
@@ -69,4 +74,6 @@ class Sampler:
 
 Here, `forward_sample` does one iteration of the training algorithm above and `loop` is the whole sampling algorithm.
 
-<img width="922" alt="diffusion" src="https://github.com/okarthikb/Diffusion/assets/86470305/d98c9d24-b63e-4442-9826-9d9114f0e932">
+<div align='center'>
+  <img width="922" alt="diffusion" src="https://github.com/okarthikb/Diffusion/assets/86470305/d98c9d24-b63e-4442-9826-9d9114f0e932"/>
+</div>
